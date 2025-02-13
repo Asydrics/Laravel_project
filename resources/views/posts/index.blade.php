@@ -10,7 +10,6 @@
                 <section class="mb-20">
                     <div
                         class="bg-gray-700 rounded-lg shadow-lg monster-card"
-                        {{-- data-monster-type="{{ strtolower(optional($randomMonster->monster_type)->name ?? 'Type inconnu') }}" --}}
                         data-monster-type="{{ strtolower($randomMonster->monster_type->name)}}"
                     >
                     <div class="md:flex">
@@ -52,7 +51,7 @@
                         <div class="mb-4">
                         <div>
                             <strong class="text-white">Type:</strong>
-                            {{-- <span class="text-gray-300">{{ strtolower(optional($randomMonster->monster_type)->name ?? 'Type inconnu') }}</span> --}}
+                            <span class="text-gray-300">{{$randomMonster->monster_type->name}}</span>
                         </div>
                         <div>
                             <strong class="text-white">PV:</strong>
